@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    max-width: 1000px;
+    margin:0 auto;
+}
+header {
+    background-image: url(background.jpg);
+    text-align: center;
+    font-size:30px;
+}
+
+nav {
+    font-size:25px;
+    text-align: center;
+    height: 90px;
+}
+
+#skills {
+    background-color:green;
+
+}
+
+#form {
+    float:left;
+    
+}
+
+#contact {
+    text-align: right;
+    background-color: pink;
+    margin-left: 550px;
+    border:  550px;
+}
+
+#foot {
+    text-align: center;
+}
+article {
+    background-color:  black;
+    color: white;
+    font-size: x-large;
+}
+p{
+    font-size: larger ;
+}
+li{
+    font-size: larger;
+}

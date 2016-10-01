@@ -2,37 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Personal Page</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/link.css">
+    <link rel="stylesheet" media="(min-width: 321px)" href="css/index-layout-lg.css">
+    <link rel="stylesheet" media="(max-width: 320px)" href="css/index-layout-sm.css">
 </head>
 <body>
     <header>
-        <div id="name" align="center"><h2>Hi, my name is Vasyl Paliukha.</h2></font>
+            <h3>Hi, my name is Vasyl Paliukha.</h3>
             <font size="+1"> If you have a failed computer or laptop You can contact me with the question of repairs. 
             <br> Also soon I will be able to create full-fledged web sites . That's why I signed up to learn HTML5, CSS3, Javascript</div>
-    </header>
+    
     <nav>
-        <div id="navigation" align="center"><font size="+2">
                 <a class="menu" href="#index">Home</a>
                 <a class="menu" href="#about_me">About Me</a>
                 <a class="menu" href="#my_skills">My skills</a>
-                <a class="menu" href="#contact_me">Contact Me</a></div>
+                <a class="menu" href="#contact_me">Contact Me</a>
     </nav>
-    <section id="about_me">
-        <div id="background"></div>
-        <div id="title"><h4><a name="about_me">About Me</a></h4></div>
-        <div id="img">
-            <img src="" alt="me" align="left" widht="200" height="250" hspace="250">
-        </div>
-            <p align="justify"> <font size="+1">I am 23 years old. live in the city of Gorodok of Lviv region. 
-            In 2015 I am graduated from the Lviv national University named after Ivan Franko, faculty of electronics, Department of physical and biomedical electronics.</font></p>
-            <p align="justify"> <font size="+1"> Among the personal qualities I can highlight the ability to communicate with people, 
-            sociable, responsible, punctuality, accuracy, absence of bad habits, fast learner, polite.</font></p>
-    </section>
+    </header>
     
-    <section id="my_skills">
-        <div id="background"></div>
-        <div id="title"><h4><a name="my_skills">My Skills</a></h4></div>
-                <ul> 
+    <article>
+        <a name="about_me">About Me</a>
+    </article>
+    
+    <aside id="left">
+        <img src="me.jpg" alt="me" widht="400px" height="450px">
+    </aside>
+    
+    <aside id="right">
+        <p align="justify">I am 23 years old. live in the city of Gorodok of Lviv region. 
+        In 2015 I am graduated from the Lviv national University named after Ivan Franko, faculty of electronics, Department of physical and biomedical electronics.</p>
+        <p align="justify"> Among the personal qualities I can highlight the ability to communicate with people, 
+        sociable, responsible, punctuality, accuracy, absence of bad habits, fast learner, polite.</p>
+    </aside>
+    
+    <article>
+        <a name="my_skills">My Skills</a>
+    </article>
+    
+    <section id="skills">
+        <ul> 
                 <font size="+1">
                     <li>Experienced PC user</li>
                     <li>Fluent skills in Assembly/disassembly of PC/laptops </li>
@@ -42,11 +52,12 @@
                 </ul>
     </section>
     
-    <footer id="contact_me">
-        <div id="background"></div>
-        <div id="title"><h4><a name="contact_me">Contact Me</a></h4></div>
-        
-        <form id="form">
+    <article>
+        <a name="contact_me">Contact Me</a>
+    </article>
+    
+    <aside id="form">
+        <form action="https://formspree.io/vasil.palukha@gmail.com" method="POST">
         <label for="name">Your name:</label><br>
         <input type="text" name="name" id="name" size="70" required><br>
       
@@ -54,15 +65,20 @@
         <input type="email" name="email" id="email" size="70" required><br>
         
         <label for="comments">Your comments:</label><br>
-        <textarea name="comments" id="comments" rows="10" cols="60">
+        <textarea name="comments" id="comments" rows="10" cols="53">
         </textarea><br>
         <input type="submit" name="submit">
         </form>
-        <div id="contact" align="right">
-            My number phone:+380964100501
+    </aside>
+    
+    <aside id="contact">
+        My adress: Lviv region, city Gorodok, street. Komarnivska 52
         <br>
-            My e-mail: vasil.paulha@gmail.com
-        </div>
-    </footer>
+        My number phone:+380964100501
+        <br>
+        My e-mail: vasil.paulha@gmail.com
+    </aside>
+    
+    
 </body>
 </html>
